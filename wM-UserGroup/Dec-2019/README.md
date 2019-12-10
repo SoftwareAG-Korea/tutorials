@@ -31,7 +31,8 @@ Part 2에서 workflow을 API로 만드는 부분이 매우 쉽게 바뀔 예정�
 
   
   1. Slack과 SMS workflow을 API로 만들기
-  2. Mashup API 만들기
+  2. API Portal에서 개선 요청 확인하기
+  3. Mashup API 만들기
   
   
 ### (참고사항) [API 해커톤 및 베타 프로그램](https://engage.softwareag.cloud/)  
