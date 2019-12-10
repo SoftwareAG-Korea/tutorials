@@ -1,4 +1,4 @@
-  
+    
   ## Part 2.1 webMethods.io API로 이동 및 API 생성  
   ![](./images/part.2-1.webMethods.io.api.gw.01.png)
   ![](./images/part.2-1.webMethods.io.api.gw.02.png)
@@ -46,6 +46,7 @@
   
   ## Part 2.3 패키지와 플랜 작성  
   지금 만든 API를 배포하여 사용할 수 있지만 보안적인 부분과 API Consumer들에게 API 정책을 차별화하여 제공하기 위해서는 API를 패키징하여 플랜을 같이 제공해야 합니다.  
+  Package와 Plan을 작성해보도록 하겠습니다.
   ![](./images/part.2-3.webMethods.io.api.gw.create.plan.package.01.png)
   ![](./images/part.2-3.webMethods.io.api.gw.create.plan.package.02.png)
   ![](./images/part.2-3.webMethods.io.api.gw.create.plan.package.03.png)
