@@ -1,4 +1,4 @@
-      
+  
   ## Part 1.1 webMethods.io Integration 로그인 및 프로젝트 생성
   ![](./images/part.1-1.webMethods.io.01.png)
   ![](./images/part.1-1.webMethods.io.02.png)
@@ -141,4 +141,9 @@
   ![](./images/part.1-8.Optional.Translate.04.png)
   ![](./images/part.1-8.Optional.Translate.05.png)
  
+  
+  
+  ## Part 1.9 (옵션) 공통 workflow 대신에 API 서비스로 변경
+  Biz workflow에서 공통 Slack/SMS workflow 호출하는 부분을 Part 2에서 만든 API로 안전하게 연동해보세요.
+  
   
