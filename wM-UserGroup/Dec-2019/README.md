@@ -1,5 +1,6 @@
 # Welcome to 2019 Korea webMthods User Group  
 webMethods.io Integration에서 workflow을 만들어 보고 공통 workflow을 webMethods.io API에서 API로 노출하는 튜토리얼입니다.  
+거의 모든 단계를 스크린캡쳐하였기 때문에 큰 어려움없이 쉽게 따라하실 수 있습니다.
 
 
 
@@ -26,6 +27,8 @@ webMethods.io Integration에서 Salesforce connector을 이용하여 생성 Lead
   
 ### [Part 2. webMethods.io API](./Part2/README.md)  
 webMethods.io Integration에서 만든 Slack과 SMS workflow을 webMethods.io API에서 API로 만들어 봅니다.  
+Part 2에서 workflow을 API로 만드는 부분이 매우 쉽게 바뀔 예정입니다. 현재 로드맵 상으로 WebMethods.io의 2020년 Spring Release에는 만든 workflow를 쉽게 webMethods.io API로 배포할 수 있습니다.  
+
   
   1. Slack과 SMS workflow을 API로 만들기
   2. Mashup API 만들기
