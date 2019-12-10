@@ -27,7 +27,7 @@ webMethods.io Integration에서 Salesforce connector을 이용하여 생성 Lead
   
 ### [Part 2. webMethods.io API](./Part2/README.md)  
 webMethods.io Integration에서 만든 Slack과 SMS workflow을 webMethods.io API에서 API로 만들어 봅니다.  
-Part 2에서 workflow을 API로 만드는 부분이 매우 쉽게 바뀔 예정입니다. 현재 로드맵 상으로 WebMethods.io의 2020년 Spring Release에는 만든 workflow를 쉽게 webMethods.io API로 배포할 수 있습니다.  
+Part 2에서 workflow을 API로 만드는 부분이 매우 쉽게 바뀔 예정입니다. 현재 로드맵 상으로 webMethods.io의 2020년 Spring Release에는 만든 workflow를 쉽게 webMethods.io API로 배포할 수 있습니다.  
 
   
   1. Slack과 SMS workflow을 API로 만들기
