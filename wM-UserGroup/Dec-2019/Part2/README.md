@@ -140,3 +140,11 @@ Part 2에서 workflow을 API로 만드는 부분이 매우 쉽게 바뀔 예정�
   ![](./images/part.2-5.webMethods.io.api.mashup.47.png)
   
   
+  ## [API 해커톤 및 베타 프로그램](https://engage.softwareag.cloud/)  
+  살아있는 API 서비스를 하기 위해서는 API 개발자들과 지속적으로 소통할 수 있는 채널이 필요합니다.  
+  API Portal의 커뮤너티 등을 이용하여 소통도 당연히 해야 하겠지만 보다 적극적으로 API 개발자들의 참여 유도 및 동기 부여가 필요합니다.  
+  [API Engage 서비스](https://engage.softwareag.cloud/)을 이용하여 API 해커톤(Hackathons)과 베타 프로그램(BETA Programs) 행사를 만들 수 있습니다. 이를 통해서 API 개발자들과 보다 긴밀히 소통할 수 있습니다.  
+  API Enage 서비스는 Software AG가 webMethods.io와는 별개로 제공하는 클라우드 서비스로 고객이 필요한 기간 동안만 API 해커톤/베타 프로그램 쉽게 수행할 수 있습니다.  
+  [API Enage 클라우드](https://engage.softwareag.cloud/) URL : https://engage.softwareag.cloud  
+  
+  
