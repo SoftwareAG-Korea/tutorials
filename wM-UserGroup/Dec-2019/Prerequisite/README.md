@@ -1,5 +1,5 @@
   
-### [사전 준비 사항]  
+### 사전 준비 사항  
   
   1. [webMethods.io Free Trial](./README-Preq-1.md)
   2. [Saleforce Developer Free Trial](./README-Preq-2.md)
