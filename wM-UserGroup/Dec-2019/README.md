@@ -6,7 +6,7 @@ webMethods.io Integration에서 workflow을 만들어 보고 공통 workflow을 
 
 ## 튜토리어 개요
 
-### [사전 준비 사항](./Prerequisite/README.MD)
+### [사전 준비 사항](./Prerequisite/README.md)
 
   1. webMethods.io Free Trial
   2. Saleforce Developer Free Trial
@@ -16,7 +16,7 @@ webMethods.io Integration에서 workflow을 만들어 보고 공통 workflow을 
 
 
 
-### [Part 1. webMethods.io Integration](https://github.com/SoftwareAG-Korea/tutorials/edit/master/wM-UserGroup/Dec-2019/Part1/README.MD)
+### [Part 1. webMethods.io Integration](https://github.com/SoftwareAG-Korea/tutorials/blob/master/wM-UserGroup/Dec-2019/Part1/README.md)
 Salesforce connector을 이용하여 Lead가 생성되면 처리하는 workflow를 만들어 봅니다.
 
   1. Lead 정보의 연락처를 Salesforce에 Contact에 입력하기
@@ -25,7 +25,7 @@ Salesforce connector을 이용하여 Lead가 생성되면 처리하는 workflow�
 
 
 
-### [Part 2. webMethods.io API](https://github.com/SoftwareAG-Korea/tutorials/edit/master/wM-UserGroup/Dec-2019/Part2/README.MD)
+### [Part 2. webMethods.io API](https://github.com/SoftwareAG-Korea/tutorials/blob/master/wM-UserGroup/Dec-2019/Part1/README.md)
 webMethods.io Integration에서 만든 Slack과 SMS workflow을 webMethods.io API에서 API로 만들어 봅니다.
 
   1. Slack과 SMS workflow을 API로 만들기
