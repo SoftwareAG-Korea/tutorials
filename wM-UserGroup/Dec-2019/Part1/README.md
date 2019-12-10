@@ -1,4 +1,6 @@
   
+webMethods.io Integration에서 Salesforce connector을 이용하여 생성 Lead로부터 연락처를 입력하고 Slack과 SMS를 보내는 workflow를 만들어 봅니다.  
+  
   ## Part 1.1 webMethods.io Integration 로그인 및 프로젝트 생성
   ![](./images/part.1-1.webMethods.io.01.png)
   ![](./images/part.1-1.webMethods.io.02.png)
