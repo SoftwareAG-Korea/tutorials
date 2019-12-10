@@ -1,5 +1,5 @@
-    
-  # Part 1.1 webMethods.io Integration 로그인 및 프로젝트 생성
+      
+  ## Part 1.1 webMethods.io Integration 로그인 및 프로젝트 생성
   ![](./images/part.1-1.webMethods.io.01.png)
   ![](./images/part.1-1.webMethods.io.02.png)
   ![](./images/part.1-1.webMethods.io.03.png)
@@ -8,13 +8,13 @@
   ![](./images/part.1-1.webMethods.io.06.png)
   
   
-  # Part 1.2 Workflow 생성  
+  ## Part 1.2 Workflow 생성  
   ![](./images/part.1-2.webMethods.io.Create.Workflow.01.png)
   ![](./images/part.1-2.webMethods.io.Create.Workflow.02.png)
   ![](./images/part.1-2.webMethods.io.Create.Workflow.03.png)
   
   
-  # Part 1.3 Biz Workflow - 리드 트리거 설정  
+  ## Part 1.3 Biz Workflow - 리드 트리거 설정  
   Salesforce에서 사전에 만든 ConnectedApp의 OAuth을 받아서 Salesforce 트리거를 설정합니다.
   ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.01.png)
   ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.02.png)
@@ -35,7 +35,7 @@
   ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.17.png)
   
   
-  # Part 1.4 Biz Workflow - 연락처 입력  
+  ## Part 1.4 Biz Workflow - 연락처 입력  
   Salesforce 이외의 다른 CRM SaaS 서비스에 입력할 수도 있습니다. 본 튜토리얼에서는 Lead에 들어온 연락처 정보를 Salesforce의 연락처에 입력하는 시나리오로 진행합니다.
   ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.01.png)
   ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.02.png)
@@ -50,7 +50,7 @@
   ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.11.png)
   
   
-  # Part 1.5 Biz Workflow - Slack 메신저 보내기  
+  ## Part 1.5 Biz Workflow - Slack 메신저 보내기  
   사내 메신저가 SaaS/PaaS처럼 API를 제공한다면 node.js로 Custom(사용자 정의) Connector를 만들어서 사용할 수 있습니다. 본 튜토리얼에서는 Slack 메신저로 Salesforce의 Lead 정보를 에 다수의 Slack 사용자가 초대되어 있는 Lead 채널에 Lead 정보를 보내는 시나리오로 진행합니다.  
   ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.01.png)
   ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.02.png)
@@ -65,7 +65,7 @@
   ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.11.png)
   
   
-  # Part 1.6 Biz Workflow - SMS 문자 보내기  
+  ## Part 1.6 Biz Workflow - SMS 문자 보내기  
   Twilio라는 글로벌 SMS SaaS 서비스를 연동하는 경우에는 Twilio Connector를 제공하기 때문에 보다 쉽게 연동할 수 있습니다. 본 튜토리얼에서는 국내 SMS 문자 및 카카오 메시지 서비스를 하는 알리고(Aligo) API를 이용하여 연동하기로 합니다. 알리고(Aligo) 서비스는 유료 서비스이기 때문에 test 파라미터를 설정하여 호출이 잘되는지만 확인하도록 하겠습니다.  
   ![](./images/part.1-6.webMethods.io.Workflow.Send.Message.SMS.01.png)
   ![](./images/part.1-6.webMethods.io.Workflow.Send.Message.SMS.02.png)
@@ -86,7 +86,7 @@
   ![](./images/part.1-6.webMethods.io.Workflow.Send.Message.SMS.17.png)
   
   
-  # Part 1.7 Reuse 01 Workflow - Slack/SMS 공통 workflow 만들기  
+  ## Part 1.7 Reuse 01 Workflow - Slack/SMS 공통 workflow 만들기  
   ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.01.png)
   ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.02.png)
   ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.03.png)
@@ -133,10 +133,12 @@
   ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.44.png)
   
   
-  # Part 1.8 (옵션) 네이버 파파고 번역 서비스 연동하기  
+  ## Part 1.8 (옵션) 네이버 파파고 번역 서비스 연동하기  
   SMS 문자 보내는 workflow로 연결해야 해야 하지만 알리고(Aligo) 서비스는 유료 서비스이기 떄문에 Slack 메시지를 보내는 Workflow에 파파고 번역 서비스를 API로 연동하는 시나리오로 진행합니다.  
   ![](./images/part.1-8.Optional.Translate.01.png)
   ![](./images/part.1-8.Optional.Translate.02.png)
   ![](./images/part.1-8.Optional.Translate.03.png)
   ![](./images/part.1-8.Optional.Translate.04.png)
   ![](./images/part.1-8.Optional.Translate.05.png)
+ 
+  
