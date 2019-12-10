@@ -1,6 +1,6 @@
   
 webMethods.io Integration에서 만든 Slack과 SMS workflow을 webMethods.io API에서 API로 만들어 봅니다.
-Part 2에서 workflow을 API로 만드는 부분이 매우 쉽게 바뀔 예정입니다. 현재 로드맵 상으로 WebMethods.io의 2020년 Spring Release에는 만든 workflow를 쉽게 webMethods.io API로 배포할 수 있습니다.  
+Part 2에서 workflow을 API로 만드는 부분이 매우 쉽게 바뀔 예정입니다. 현재 로드맵 상으로 webMethods.io의 2020년 Spring Release에는 만든 workflow를 쉽게 webMethods.io API로 배포할 수 있습니다.  
   
   ## Part 2.1 webMethods.io API로 이동 및 API 생성  
   ![](./images/part.2-1.webMethods.io.api.gw.01.png)
