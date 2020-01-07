@@ -4,7 +4,7 @@ webMethods.io Integration에서 workflow을 만들어 보고 공통 workflow을 
 
 
 
-## 튜토리어 개요  
+## 튜토리 개요  
   
 ### [사전 준비 사항](./Prerequisite/README.md)  
   
