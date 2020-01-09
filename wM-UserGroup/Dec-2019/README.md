@@ -35,7 +35,7 @@ Part 2에서 workflow을 API로 만드는 부분이 매우 쉽게 바뀔 예정�
   3. Mashup API 만들기
   
   
-### (참고사항) [API 해커톤 및 베타 프로그램](https://engage.softwareag.cloud/){: target="_blank"}  
+### (참고사항) [API 해커톤 및 베타 프로그램](https://engage.softwareag.cloud/ target="_blank")  
 살아있는 API 서비스를 하기 위해서는 API 개발자들과 지속적으로 소통할 수 있는 채널이 필요합니다.  
 API Portal의 커뮤너티 등을 이용하여 소통도 당연히 해야 하겠지만 보다 적극적으로 API 개발자들의 참여 유도 및 동기 부여가 필요합니다.  
 API Enagement 서비스을 이용하여 API 해커톤(Hackathons)과 베타 프로그램(BETA Programs) 행사를 만들 수 있습니다. 이를 통해서 API 개발자들과 보다 긴밀히 소통할 수 있습니다.  
