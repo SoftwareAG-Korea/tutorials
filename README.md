@@ -6,9 +6,9 @@
   
   
 ### Tutorial 목록  
-[01. webMethods.io Integration과 API 튜토리얼](https://github.com/SoftwareAG-Korea/tutorials/blob/master/wM-UserGroup/Dec-2019/README.md) 발표자 : Software AG, Korea 이범
-[02. webMethods.io B2B 튜토리얼](https://github.com/SoftwareAG-Korea/tutorials/blob/master/wM-UserGroup/Dec-2019/README-B2B.md) 발표자 : 노쓰스타 이인호 / 작성 중
-[03. webMethods CloudStreams 튜토리얼](https://github.com/SoftwareAG-Korea/tutorials/blob/master/wM-UserGroup/Dec-2019/README-CloudStreams.md) 발표자 : 쿠도 최상혁 / 작성 중
+[01. webMethods.io Integration과 API 튜토리얼](https://github.com/SoftwareAG-Korea/tutorials/blob/master/wM-UserGroup/Dec-2019/README.md) 발표자 : Software AG, Korea 이범  
+[02. webMethods.io B2B 튜토리얼](https://github.com/SoftwareAG-Korea/tutorials/blob/master/wM-UserGroup/Dec-2019/README-B2B.md) 발표자 : 노쓰스타 이인호 / 작성 중  
+[03. webMethods CloudStreams 튜토리얼](https://github.com/SoftwareAG-Korea/tutorials/blob/master/wM-UserGroup/Dec-2019/README-CloudStreams.md) 발표자 : 쿠도 최상혁 / 작성 중  
   
   
   
