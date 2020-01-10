@@ -1,15 +1,15 @@
   ## 'webMethods.io Integration과 API 살펴보기' 튜토리얼 - Part 2  
   2019년 12월 webMethods User Group Meetup 행사의 'webMethods.io Integration과 API 살펴보기' Part 2로 webMethods.io API에 대한 튜토리얼입니다.
   Part 1과 이어지는 튜토리얼이므로 Part 1을 먼저 확인하시고 Part 2를 진행하시기 바랍니다.
-  ['webMethods.io Integration과 API 살펴보기' Part 1](https://github.com/SoftwareAG-Korea/tutorials/blob/master/wmio/integration/salesforce%2Bmessanger%2Bsms/README.md)을 참고 하세요.  
+  ['webMethods.io Integration과 API 살펴보기' Part 1](https://github.com/SoftwareAG-Korea/tutorials/blob/master/wmio/integration/salesforce+messanger+sms/README.md)을 참고 하세요.  
   
   > Author: Software AG Korea [이범](https://github.com/billybeom)  
   > Last Modified: 10-JAN-2020  
   
 
   ### Part 2의 사전 준비 사항    
-  * (필수) [webMethods.io API - Free Trial 신청](/SoftwareAG-Korea/tutorials/blob/master/wM-UserGroup/Dec-2019/Prerequisite/README.preq1.md)  
-  * (옵션) [네이버 파파고 번역 API 사용 신청](/SoftwareAG-Korea/tutorials/blob/master/wM-UserGroup/Dec-2019/Prerequisite/README.preq5.md)  
+  * (필수) [webMethods.io API - Free Trial 신청](/SoftwareAG-Korea/tutorials/blob/master/UserGroup/Dec-2019/Prerequisite/README.preq1.md)  
+  * (옵션) [네이버 파파고 번역 API 사용 신청](/SoftwareAG-Korea/tutorials/blob/master/UserGroup/Dec-2019/Prerequisite/README.preq5.md)  
 
   
   ### Part 2. webMethods.io API 튜토리얼  

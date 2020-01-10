@@ -4,7 +4,7 @@
   
   
 ### 유저그룹 행사 목록  
-[01. 2019년 12월 webMethods User Group](https://github.com/SoftwareAG-Korea/tutorials/blob/master/UserGroup/Dec-2019/README.md)  
+[01. 2019년 12월 webMethods User Group](./Dec-2019/)  
 
   
   
