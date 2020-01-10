@@ -1,10 +1,14 @@
   ## webMethods.io Integration과 API 튜토리얼 - Part 2  
-  2019년 12월 webMethods User Group Meetup 행사의 webMethods.io Integration과 API 살펴보기 Part 2으로 webMethods.io API에 대한 튜토리얼입니다.  
-
-  ## Part 1. webMethods.io API 튜토리얼  
+  2019년 12월 webMethods User Group Meetup 행사의 'webMethods.io Integration과 API 살펴보기' Part 2으로 webMethods.io API에 대한 튜토리얼입니다.
+  ['webMethods.io Integration과 API 살펴보기' Part 1](https://github.com/SoftwareAG-Korea/tutorials/blob/master/wmio/integration/messenger%2Bsms/README.md)을 참고 하세요.
+  > Author: Software AG Korea [이범](https://github.com/billybeom)  
+  > Last Modified: 10-JAN-2020  
   
-webMethods.io Integration에서 만든 Slack과 SMS workflow을 webMethods.io API에서 API로 만들어 봅니다.
-Part 2에서 workflow을 API로 만드는 부분이 매우 쉽게 바뀔 예정입니다. 현재 로드맵 상으로 webMethods.io의 2020년 Spring Release에는 만든 workflow를 쉽게 webMethods.io API로 배포할 수 있습니다.  
+  
+  ## Part 2. webMethods.io API 튜토리얼  
+  
+webMethods.io Integration에서 만든 Slack과 SMS workflow을 webMethods.io API에서 API로 만들어 봅니다.  
+Part 2에서 workflow을 API로 만드는 부분이 매우 쉽게 바뀔 예정입니다. ++webMethods.io의 2020년 Spring Release에서는 만든 workflow를 버튼 몇번 클릭으로만으로 webMethods.io API Gateway에 API로 쉽게 배포할 수 있습니다.++  
   
   ## Part 2.1 webMethods.io API로 이동 및 API 생성  
   ![](./images/part.2-1.webMethods.io.api.gw.01.png)
