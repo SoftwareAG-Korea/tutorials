@@ -6,7 +6,6 @@
   
   > Author: Software AG Korea [이범](https://github.com/billybeom)  
   > Last Modified: 10-JAN-2020  
-  > Last Modified: 10-JAN-2020  
   
   
   ### Part 1의 사전 준비 사항    
