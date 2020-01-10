@@ -6,6 +6,6 @@
 ### 튜토리얼 목록  
   
   * [webMethods.io Integration과 API 살펴보기](./wmio%2Bintegration%2Bapi/)  
-  * 작성 중 [webMethods.io B2B 살펴보기](https://github.com/SoftwareAG-Korea/tutorials/blob/master/wM-UserGroup/Dec-2019/wmio%2Bb2b/)  
-  * 작성 중 [webMethods CloudStreams 살펴보기](https://github.com/SoftwareAG-Korea/tutorials/blob/master/wM-UserGroup/Dec-2019/webMethods+CloudStreams/)  
+  * 작성 중 [webMethods.io B2B 살펴보기](/SoftwareAG-Korea/tutorials/blob/master/wM-UserGroup/Dec-2019/wmio%2Bb2b/)  
+  * 작성 중 [webMethods CloudStreams 살펴보기](/SoftwareAG-Korea/tutorials/blob/master/wM-UserGroup/Dec-2019/webMethods+CloudStreams/)  
   
