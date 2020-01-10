@@ -1,4 +1,4 @@
-  ## webMethods.io Integration과 API 튜토리얼 - Part 2  
+  ## 'webMethods.io Integration과 API 살펴보기' 튜토리얼 - Part 2  
   2019년 12월 webMethods User Group Meetup 행사의 'webMethods.io Integration과 API 살펴보기' Part 2으로 webMethods.io API에 대한 튜토리얼입니다.
   ['webMethods.io Integration과 API 살펴보기' Part 1](https://github.com/SoftwareAG-Korea/tutorials/blob/master/wmio/integration/messenger%2Bsms/README.md)을 참고 하세요.
   > Author: Software AG Korea [이범](https://github.com/billybeom)  
