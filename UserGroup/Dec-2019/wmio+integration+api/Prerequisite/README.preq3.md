@@ -18,4 +18,3 @@
   ![](./images/Prerequisite.03.Create-ConnectedApp-In-Lightning.05.png)
   
   
- 
