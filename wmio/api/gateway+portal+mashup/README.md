@@ -26,7 +26,9 @@ Part 2에서 workflow을 API로 만드는 부분이 매우 쉽게 바뀔 예정�
   ![](./images/part.2-1.webMethods.io.api.gw.11.png)
   ![](./images/part.2-1.webMethods.io.api.gw.12.png)
   ![](./images/part.2-1.webMethods.io.api.gw.13.png)
-  ![](./images/part.2-1.webMethods.io.api.gw.14.png)
+  ![](./images/part.2-1.webMethods.io.api.gw.14.png)  
+    
+  다음은 스키마 등록 단계입니다. 필수단계는 아니지만 스키마를 등록해두면 API Gateway가 API 호출 요청이 받았을 때 Schema validation하는 기능을 설정할 수 있습니다.  
   ![](./images/part.2-1.webMethods.io.api.gw.15.png)
   ![](./images/part.2-1.webMethods.io.api.gw.16.png)
   ![](./images/part.2-1.webMethods.io.api.gw.17.png)
@@ -58,7 +60,7 @@ Part 2에서 workflow을 API로 만드는 부분이 매우 쉽게 바뀔 예정�
   
   
   ### Part 2.3 패키지와 플랜 작성  
-  지금 만든 API를 배포하여 사용할 수 있지만 보안적인 부분과 API Consumer들에게 API 정책을 차별화하여 제공하기 위해서는 API를 패키징하여 플랜을 같이 제공해야 합니다.  
+  지금 만든 API를 배포하여 사용할 수 있지만 보안(Security)적인 부분과 API Consumer들에게 API 정책을 차별화하여 제공하기 위해서는 API를 패키징하여 플랜을 같이 제공해야 합니다.  
   Package와 Plan을 작성해보도록 하겠습니다.
   ![](./images/part.2-3.webMethods.io.api.gw.create.plan.package.01.png)
   ![](./images/part.2-3.webMethods.io.api.gw.create.plan.package.02.png)
@@ -89,7 +91,7 @@ Part 2에서 workflow을 API로 만드는 부분이 매우 쉽게 바뀔 예정�
   
   ### Part 2.4 API 포탈의 개발자 피드백 확인  
   자연스러운 튜토리얼 진행 흐름은 TutorialMessage API 버전 1.0을 사용하기 위해서 사용하고자 하는 플랜에 가입(Subscription)하고 API Client 개발을 위해서 API Portal에서 선호하는 언어(java,c,c#,node.js 등)의 클라이언트 SDK를 다운로드 받아서 API Client 샘플 코드로 연계해 봐야 합니다.  
-  이 부분은 본 튜토리얼에서는 SKIP하고 충분히 사용하다가 API를 사용하다가 불편한 점을 API Portal에 HTTP Resource를 추가 지원해주는 의견을 게시하는 것으로 가정하겠습니다.
+  본 튜토리얼에서는 TutorialMessage API 버전 1.0을 어느 정도 기간동안 충분히 API를 연동하다가 불편한 점을 API Portal에 새로운 HTTP Resource를 추가 지원해달라고 하는 의견을 게시하는 것으로 가정하겠습니다.
   ![](./images/part.2-4.webMethods.io.api.feedback.01.png)
   ![](./images/part.2-4.webMethods.io.api.feedback.02.png)
   ![](./images/part.2-4.webMethods.io.api.feedback.03.png)
@@ -99,8 +101,8 @@ Part 2에서 workflow을 API로 만드는 부분이 매우 쉽게 바뀔 예정�
   
   
   ### Part 2.5 Mashup을 이용한 신규 HTTP Resource 생성  
-  API Portal의 개선 요청 게시글의 "좋아요" 건수 매우 많아서 개선 요청 내용을 API에 반영해주기로 합니다.  
-  API Mashup 기능을 사용하여 쉽게 새로운 HTTP Resource을 추가해보도록 하겠습니다.  
+  API Portal의 개선 요청 게시글의 "좋아요" 건수가 높은 것을 확인하고 개선 요청 내용을 API에 반영해주기로 합니다.  
+  API의 Natvie 서비스를 추가 개발하는 것이 아니라 API Gateway 단에서 기존의 API Resource들을 가지고 API를 Mashup하여 새로운 HTTP Resource을 쉽게 빠르게 추가해 보도록 하겠습니다.  
   ![](./images/part.2-5.webMethods.io.api.mashup.01.png)
   ![](./images/part.2-5.webMethods.io.api.mashup.02.png)
   ![](./images/part.2-5.webMethods.io.api.mashup.03.png)
@@ -152,9 +154,9 @@ Part 2에서 workflow을 API로 만드는 부분이 매우 쉽게 바뀔 예정�
   
   ### [API 해커톤 및 베타 프로그램](https://engage.softwareag.cloud/)  
   살아있는 API 서비스를 하기 위해서는 API 개발자들과 지속적으로 소통할 수 있는 채널이 필요합니다.  
-  API Portal의 커뮤너티 등을 이용하여 소통도 당연히 해야 하겠지만 보다 적극적으로 API 개발자들의 참여 유도 및 동기 부여가 필요합니다.  
-  또한, API Engagement platform 서비스도 제공하고 있습니다. API Engagement platform 서비스는 webMethods.io와는 별도로 제공하는 클라우드 서비스로 필요한 기간 동안만 API 해커톤/베타 프로그램을 빠르고 쉽게 연결하여 운영할 수 있습니다.  
-  API Engagement platform 서비스를 통해서 API 개발자와 API 제공자들과의 보다 긴밀히 소통할 수 있습니다.  
+  API Portal의 커뮤너티 등을 이용하여 소통도 당연히 해야 하겠지만 API 개발자들의 보다 적극적인 참여 유도 및 동기 부여를 위해서 해커톤 및 베타 프로그램 행사가 필요하기도 합니다.  
+  API Engagement platform 서비스는 webMethods.io와는 별도로 제공하는 클라우드 서비스로 필요한 기간 동안만 API 해커톤/베타 프로그램을 빠르고 쉽게 연결하여 운영할 수 있습니다.  
+  API Engagement platform 서비스를 통해서 API Consumer와 API Provider들은 보다 긴밀히 소통할 수 있습니다.  
   API Engagement platform 서비스 URL: https://engage.softwareag.cloud  
   
   
