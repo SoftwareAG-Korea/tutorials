@@ -13,7 +13,8 @@ Part 2에서 workflow을 API로 만드는 부분이 매우 쉽게 바뀔 예정�
   ### Part 2.1 webMethods.io API로 이동 및 API 생성  
   ![](./images/part.2-1.webMethods.io.api.gw.01.png)
   ![](./images/part.2-1.webMethods.io.api.gw.02.png)
-  ![](./images/part.2-1.webMethods.io.api.gw.03.png)
+  ![](./images/part.2-1.webMethods.io.api.gw.03.png)  
+  아래의 URL은 webMethods.io Integration에서 생성한 flow의 webhook URL과 파라미터입니다. API로 등록할 Native Server URL과 HTTP Resource를 확인합니다.
   ![](./images/part.2-1.webMethods.io.api.gw.04.png)
   ![](./images/part.2-1.webMethods.io.api.gw.05.png)
   ![](./images/part.2-1.webMethods.io.api.gw.06.png)
