@@ -7,9 +7,9 @@
   
   
 ### Tutorial 목록  
-[01. webMethods.io Integration과 API 튜토리얼](/SoftwareAG-Korea/tutorials/blob/master/UserGroup/Dec-2019/wmio+integration+api/) 발표/작성자: Software AG, Korea [이범](https://github.com/billybeom)  
-[02. webMethods.io B2B 튜토리얼 - 작성 중 ](/SoftwareAG-Korea/tutorials/blob/master/SoftwareAG-Korea/tutorials/blob/master/UserGroup/Dec-2019/wmio+b2b/) 발표/작성자: 파트너 노쓰스타 이인호 
-[03. webMethods CloudStreams 튜토리얼 - 작성 중 ](/SoftwareAG-Korea/tutorials/blob/master/UserGroup/Dec-2019/webMethods+CloudStreams/) 발표/작성자: 파트너 쿠도 최상혁  
+[01. webMethods.io Integration과 API 튜토리얼](https://github.com/SoftwareAG-Korea/tutorials/blob/master/UserGroup/Dec-2019/wmio+integration+api/) 발표/작성자: Software AG, Korea [이범](https://github.com/billybeom)  
+[02. webMethods.io B2B 튜토리얼 - 작성 중 ](https://github.com/SoftwareAG-Korea/tutorials/blob/master/SoftwareAG-Korea/tutorials/blob/master/UserGroup/Dec-2019/wmio+b2b/) 발표/작성자: 파트너 노쓰스타 이인호 
+[03. webMethods CloudStreams 튜토리얼 - 작성 중 ](https://github.com/SoftwareAG-Korea/tutorials/blob/master/UserGroup/Dec-2019/webMethods+CloudStreams/) 발표/작성자: 파트너 쿠도 최상혁  
   
   
   
