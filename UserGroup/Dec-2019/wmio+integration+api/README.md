@@ -2,6 +2,8 @@
   * Part 1: webMethods.io Integration에서 workflow을 만들고 자주 활용될 수 있는 부분을 공통 workflow로 생성  
   * Part 2: Part 1에서 만든 공통 workflow을 webMethods.io API에서 API로 생성    
   
+  > Author: Software AG Korea [이범](https://github.com/billybeom)  
+  > Last Modified: 10-JAN-2020  
   
   
 ## 튜토리얼 개요  
