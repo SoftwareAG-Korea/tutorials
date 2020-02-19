@@ -14,7 +14,7 @@
   설치가 정상적으로 진행되면 아래와 같이 WmCloudStreams 패키지를 확인 할 수 있습니다.  
   ![](./images/02.wM.CloudStreams.Connector.01.png)
   
-  ### saleforce.com Connector 설치
+  ### Saleforce Connector 설치
   CloudStream server에서 SaaS/PaaS 시스템에 연계하기 위해서는 CloudStream server에 연계하고자 하는 SaaS/PaaS별 Connector를 다운로드 받아서 설치해야 합니다. Software AG에서 지원하고 있는 SaaS/PaaS별 Connector들은 아래의 주소에서 확인할 수 있습니다.  
   http://techcommunity.softwareag.com/ecosystem/communities/public/webmethods/products/cloudstreams/downloads/connectors-cloudstreams/
   ![](./images/02.wM.CloudStreams.Connector.03.png)
