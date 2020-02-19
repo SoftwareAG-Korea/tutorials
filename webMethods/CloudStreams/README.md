@@ -11,7 +11,7 @@
   CloudStream server 사용을 위하여 webMethods Integration을 설치 시에 아래의 component를 설치하여야 합니다.  
   ![](./images/01.wM.CloudStreams.Installation.png)
   
-  설치가 정상적으로 진행되면 아래와 같이 WmCloudStreams 패키지를 확인 할 수 있습니다.  
+  설치가 정상적으로 진행되면 아래와 같이 webMethods Integration Admin 화면에서 WmCloudStreams 패키지를 확인할 수 있습니다.  
   ![](./images/02.wM.CloudStreams.Connector.01.png)
   
   ### Saleforce Connector 설치
