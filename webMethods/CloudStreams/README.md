@@ -3,8 +3,8 @@
   webMethods User Group Meetup의 다른 데모를 보시려면 [Dec-2019 유저 그룹 행사 페이지](https://github.com/SoftwareAG-Korea/tutorials/blob/master/UserGroup/Dec-2019/wmio+integration+api/)를 참고하세요.  
   본 튜토리얼에서는 On-premise에 구성된 webMethods Integration에서 Salesforce의 연락처를 inbound/outbound의 양방향 연계하는 방법에 대해서 소개합니다.  
   
-  > Main   Author: Software AG 파트너 쿠도 [최상혁](https://github.com/shyuki1203)  
-  > Second Author: Software AG Korea [이범](https://github.com/billybeom)  
+  > Main   Author: Software AG 파트너 [CUDO(쿠도커뮤니케이션)](http://www.cudo.co.kr/) [최상혁](https://github.com/shyuki1203)  
+  > Second Author: [Software AG, Korea](https://www.softwareag.com/kr/) [이범](https://github.com/billybeom) 
   > Last Modified: 19-FEB-2020  
   
   
