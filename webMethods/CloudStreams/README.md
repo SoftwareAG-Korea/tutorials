@@ -1,9 +1,9 @@
   ## 'CloudStream for Salesforce' 튜토리얼 
   2019년 12월 webMethods User Group Meetup 행사의 클라우드 서비스(SaaS/PaaS)를 연계할 수 있는 CloudStream server에 대한 데모에 대한 튜토리얼입니다.  
-  webMethods User Group Meetup의 다른 데모를 보시려면 [Dec-2019 유저 그룹 행사 페이지](https://github.com/SoftwareAG-Korea/tutorials/tree/master/UserGroup/Dec-2019/wmio+integration+api/)를 참고하세요.  
+  webMethods User Group Meetup의 다른 데모를 보시려면 [Dec-2019 유저 그룹 행사 페이지](https://github.com/SoftwareAG-Korea/tutorials/blob/master/UserGroup/Dec-2019/wmio+integration+api/)를 참고하세요.  
   본 튜토리얼에서는 On-premise에 구성된 webMethods Integration에서 Salesforce의 연락처를 inbound/outbound의 양방향 연계하는 방법에 대해서 소개합니다.  
   
-  > Main   Author: Software AG 파트너 쿠도 [최상혁](mailto:shyuki1203@cudo.co.kr)  
+  > Main   Author: Software AG 파트너 쿠도 [최상혁](https://github.com/shyuki1203)  
   > Second Author: Software AG Korea [이범](https://github.com/billybeom)  
   > Last Modified: 19-FEB-2020  
   
@@ -18,7 +18,7 @@
   ### Saleforce Connector 설치
   CloudStream server에서 SaaS/PaaS 시스템에 연계하기 위해서는 CloudStream server에 연계하고자 하는 SaaS/PaaS별 Connector를 다운로드 받아서 설치해야 합니다. Software AG에서 지원하고 있는 SaaS/PaaS별 Connector들은 아래의 주소에서 확인할 수 있습니다.  
   http://techcommunity.softwareag.com/ecosystem/communities/public/webmethods/products/cloudstreams/downloads/connectors-cloudstreams/
-  ![](./images/02.wM.CloudStreams.Connector.03.png)
+  ![](./images/02.wM.CloudStreams.Connector.02.png)
   
   위의 URL에서 Salesforce.com 연계를 위해 Salesforce Connector를 다운로드 받습니다.  
   ![](./images/02.wM.CloudStreams.Connector.03.png)
