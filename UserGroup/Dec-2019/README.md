@@ -5,7 +5,7 @@
   
 ### 튜토리얼 목록  
   
-  * [webMethods Integration CloudStreams 튜토리얼](./webMethods+CloudStreams/) 발표/작성자: Software AG 파트너 [CUDO(쿠도커뮤니케이션)](http://www.cudo.co.kr/) [최상혁](https://github.com/shyuki1203)  
+  * [webMethods Integration CloudStreams 튜토리얼](https://github.com/SoftwareAG-Korea/tutorials/blob/master/webMethods/CloudStreams/README.md) 발표/작성자: Software AG 파트너 [CUDO(쿠도커뮤니케이션)](http://www.cudo.co.kr/) [최상혁](https://github.com/shyuki1203)  
   * [webMethods.io Integration과 API 튜토리얼](./wmio+integration+api/) 발표/작성자: [Software AG, Korea](https://www.softwareag.com/kr/) [이범](https://github.com/billybeom)  
   * [webMethods.io B2B 튜토리얼 - 작성 중](./wmio+b2b/) 발표/작성자: Software AG 파트너 노스스타 이인호  
   
