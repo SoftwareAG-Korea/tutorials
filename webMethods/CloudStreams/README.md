@@ -1,5 +1,6 @@
   ## 'CloudStream for Salesforce' 튜토리얼 
   2019년 12월 webMethods User Group Meetup 행사의 클라우드 서비스(SaaS/PaaS)를 연계할 수 있는 CloudStream server에 대한 데모에 대한 튜토리얼입니다.  
+  webMethods User Group Meetup의 다른 데모를 보시려면 [Dec-2019 유저 그룹 행사 페이지](https://github.com/SoftwareAG-Korea/tutorials/tree/master/UserGroup/Dec-2019/wmio+integration+api/)를 참고하세요.  
   본 튜토리얼에서는 On-premise에 구성된 webMethods Integration에서 Salesforce의 연락처를 inbound/outbound의 양방향 연계하는 방법에 대해서 소개합니다.  
   
   > Main   Author: Software AG 파트너 쿠도 [최상혁](mailto:shyuki1203@cudo.co.kr)  
