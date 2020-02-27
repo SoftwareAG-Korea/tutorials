@@ -22,13 +22,13 @@
   먼저 Software AG의 B2B 솔루션을 설명하는 Architecture 입니다. 아래의 Architecture에서 표현되어 있는 부분과 같이 표준 B2B 서비스를 위한 파트너관리, 문서관리, 모니터링 등을 지원하고 있습니다.  
   ![](./images/01.b2b_architecture.jpg)  
   
-  이제부터 EDI 송수신을 위한 4가지 단계에 대해서 설명하겠습니다. 4가지 단계는 아래와 같습니다.  
+  이제부터 EDI 송수신을 위한 4가지 단계에 대해서 설명하겠습니다. 4가지 단계는 아래와 같습니다.
   * Integrating Trading Partners
   * Document Processing
   * Supporting B2B Standards
   * Monitoring and Analytics
 
-  ### 1. Integrating Trading Partners
+  #### 1. Integrating Trading Partners
   - B2B Service를 위한 파트너 정보와 서비스를 위한 표준 문서 및 서비스 모니터링 관리를 지원합니다.  
   ![](./images/01.b2b_tpa_01.JPG)  
   - 파트너 정보관리는 아래와 같이 트랜잭션 및 보안에 대한 정보도 포함됩니다.  
@@ -39,7 +39,7 @@
   - 요약: Integrating Trading Partners  
   ![](./images/01.b2b_tpa_05.JPG)  
   
-  ### 2. Document Processing
+  #### 2. Document Processing
  
   - 표준 문서 등록과 프로세스 실행에 대한 관리를 지원합니다.  
   ![](./images/01.b2b_dp_01.JPG)  
@@ -53,7 +53,7 @@
   - 요약: Document Processing  
   ![](./images/01.b2b_dp_04.JPG)  
 
-  ### 3. Supporting B2B Standards
+  #### 3. Supporting B2B Standards
   
   - 모든 B2B 표준과 EDI 표준 문서를 지원합니다.  
   ![](./images/01.b2b_support_01.JPG)  
@@ -61,7 +61,7 @@
   - 요약: B2B Standards  
   ![](./images/01.b2b_support_03.JPG)  
 
-  ### 4. Monitoring and Analytics
+  #### 4. Monitoring and Analytics
   
   - 서비스 흐름에 대한 모니터링을 지원합니다.  
   ![](./images/01.b2b_ma_01.JPG)  
