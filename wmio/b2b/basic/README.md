@@ -40,7 +40,7 @@
   ![](./images/01.b2b_tpa_05.JPG)  
   
   #### 2. Document Processing
- 
+  
   - 표준 문서 등록과 프로세스 실행에 대한 관리를 지원합니다.  
   ![](./images/01.b2b_dp_01.JPG)  
 
