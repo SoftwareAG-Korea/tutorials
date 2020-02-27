@@ -3,7 +3,7 @@
   본 튜토리얼에서는 webMethods.io의 B2B SaaS 서비스에 대한 기능과 간단한 사용 방법을 소개합니다.   
   
   > Main   Author: Software AG 파트너 [Northstar(노스스타컨설팅)](http://www.northstar.co.kr/) [이인호](mailto:inhovb@northstar.co.kr)  
-  > Second Author: Software AG Korea [이범](https://github.com/billybeom)  
+  > Second Author: [Software AG, Korea](https://www.softwareag.com/kr/) [이범](https://github.com/billybeom)  
   > Last Modified: 28-FEB-2020  
   
   
