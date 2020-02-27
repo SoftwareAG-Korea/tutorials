@@ -2,8 +2,8 @@
   
   
   ### Tutorial 목록  
-  * [B2B Cloud Basic](./basic/)  
-  B2B 클라우드 데모 세션에서 발표했던 파트너 노스스타의 이인호 님이 작성 중입니다...  
+  * [B2B Cloud Basic](https://github.com/SoftwareAG-Korea/tutorials/blob/master/wmio/b2b/basic/README.md)  
+  webMethods.io의 B2B SaaS 서비스에 대한 기능과 간단한 사용 방법을 소개하는 튜토리얼입니다.  
   
   
 
