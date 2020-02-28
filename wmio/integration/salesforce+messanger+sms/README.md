@@ -18,22 +18,35 @@
   webMethods.io Integration에서 Salesforce connector을 이용하여 생성되는 Lead로부터 연락처를 입력하고 Slack과 SMS를 보내는 workflow를 만들어 봅니다.  
   
   ### Part 1.1 webMethods.io Integration 로그인 및 프로젝트 생성
-  ![](./images/part.1-1.webMethods.io.01.png)
-  ![](./images/part.1-1.webMethods.io.02.png)
-  ![](./images/part.1-1.webMethods.io.03.png)
-  ![](./images/part.1-1.webMethods.io.04.png)
-  ![](./images/part.1-1.webMethods.io.05.png)
-  ![](./images/part.1-1.webMethods.io.06.png)
+  http://softwareag.cloud 에 접속하여 가입 당시 생성한 클라우드 테넌트(Tenant)를 입력하고 Username과 Password를 입력하여 로그인 합니다.  
+  ![](./images/part.1-1.webMethods.io.01.png)  
+  ![](./images/part.1-1.webMethods.io.02.png)  
+  ![](./images/part.1-1.webMethods.io.03.png)  
+  
+  webMethods.io Integration을 선택하고 Tutorial Project를 생성합니다.   
+  ![](./images/part.1-1.webMethods.io.04.png)  
+  ![](./images/part.1-1.webMethods.io.05.png)  
+  ![](./images/part.1-1.webMethods.io.06.png)  
   
   
   ### Part 1.2 Workflow 생성  
-  ![](./images/part.1-2.webMethods.io.Create.Workflow.01.png)
-  ![](./images/part.1-2.webMethods.io.Create.Workflow.02.png)
-  ![](./images/part.1-2.webMethods.io.Create.Workflow.03.png)
+  'New Workflow'를 버튼을 클릭하여 workflow 이름과 tags(추후 tag로 쉽게 workflow 검색할 수 있음)을 입력하여 workflow를 생성합니다.  
+  ![](./images/part.1-2.webMethods.io.Create.Workflow.01.png)  
+  ![](./images/part.1-2.webMethods.io.Create.Workflow.02.png)  
+  ![](./images/part.1-2.webMethods.io.Create.Workflow.03.png)  
   
   
   ### Part 1.3 Biz Workflow - 리드 트리거 설정  
-  Salesforce에서 사전에 만든 ConnectedApp의 OAuth을 받아서 Salesforce 트리거를 설정합니다.
+  Salesforce에서 사전 준비 단계에 만든 ConnectedApp에 대한 OAuth2 토큰을 발급 받아서 Salesforce 트리거를 설정합니다. 
+  
+```
+  Salesforce에서 ConnectedApp을 생성하지 않으셨다면 [Saleforce에서 ConnectedApp 생성](https://github.com/SoftwareAG-Korea/tutorials/blob/master/UserGroup/Dec-2019/wmio+integration+api/Prerequisite/README.preq3.md) 튜토리얼을 참고하여 ConnectedApp을 생성해야 합니다.
+```
+```
+  본 튜토리얼에서는 workflow과 Salesforce의 ConnectedApp의 Owner가 같다라는 전제로 진행됩니다.  
+  만약 Salesforce의 ConnectedApp에 대한 담당자가 다르다면 Salesforce의 담당자로부터 OAuth 토근을 전달 받아서 설정해야 합니다.  
+  이 부분은 사전 준비 단계의 [Postman으로 access token과 refresh token 받기](https://github.com/SoftwareAG-Korea/tutorials/blob/master/UserGroup/Dec-2019/wmio+integration+api/Prerequisite/README.preq4.md) 튜토리얼을 참고하시기 바랍니다.
+```
   ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.01.png)
   ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.02.png)
   ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.03.png)
@@ -55,17 +68,18 @@
   
   ### Part 1.4 Biz Workflow - 연락처 입력  
   Salesforce 이외의 다른 CRM SaaS 서비스에 입력할 수도 있습니다. 본 튜토리얼에서는 Lead에 들어온 연락처 정보를 Salesforce의 연락처에 입력하는 시나리오로 진행합니다.
-  ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.01.png)
-  ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.02.png)
-  ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.03.png)
-  ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.04.png)
-  ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.05.png)
-  ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.06.png)
-  ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.07.png)
-  ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.08.png)
-  ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.09.png)
-  ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.10.png)
-  ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.11.png)
+  ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.01.png)  
+  ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.02.png)  
+  ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.03.png)  
+  아래 단계부터 Salesforce에게 OAuth2 토큰 발급 과정입니다.  
+  ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.04.png)  
+  ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.05.png)  
+  ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.06.png)  
+  ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.07.png)  
+  ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.08.png)  
+  ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.09.png)  
+  ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.10.png)  
+  ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.11.png)  
   
   
   ### Part 1.5 Biz Workflow - Slack 메신저 보내기  
