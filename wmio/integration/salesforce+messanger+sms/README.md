@@ -39,62 +39,72 @@
   ### Part 1.3 Biz Workflow - 리드 트리거 설정  
   Salesforce에서 사전 준비 단계에 만든 ConnectedApp에 대한 OAuth2 토큰을 발급 받아서 Salesforce 트리거를 설정합니다. 
   
-```
-  Salesforce에서 ConnectedApp을 생성하지 않으셨다면 [Saleforce에서 ConnectedApp 생성](https://github.com/SoftwareAG-Korea/tutorials/blob/master/UserGroup/Dec-2019/wmio+integration+api/Prerequisite/README.preq3.md) 튜토리얼을 참고하여 ConnectedApp을 생성해야 합니다.
-```
-```
+  Salesforce에서 ConnectedApp을 생성하지 않으셨다면 [Saleforce에서 ConnectedApp 생성](https://github.com/SoftwareAG-Korea/tutorials/blob/master/UserGroup/Dec-2019/wmio+integration+api/Prerequisite/README.preq3.md) 튜토리얼을 참고하여 ConnectedApp을 생성해야 합니다.  
+
   본 튜토리얼에서는 workflow과 Salesforce의 ConnectedApp의 Owner가 같다라는 전제로 진행됩니다.  
   만약 Salesforce의 ConnectedApp에 대한 담당자가 다르다면 Salesforce의 담당자로부터 OAuth 토근을 전달 받아서 설정해야 합니다.  
-  이 부분은 사전 준비 단계의 [Postman으로 access token과 refresh token 받기](https://github.com/SoftwareAG-Korea/tutorials/blob/master/UserGroup/Dec-2019/wmio+integration+api/Prerequisite/README.preq4.md) 튜토리얼을 참고하시기 바랍니다.
-```
-  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.01.png)
-  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.02.png)
-  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.03.png)
-  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.04.png)
-  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.05.png)
-  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.06.png)
-  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.07.png)
-  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.08.png)
-  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.09.png)
-  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.10.png)
-  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.11.png)
-  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.12.png)
-  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.13.png)
-  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.14.png)
-  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.15.png)
-  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.16.png)
-  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.17.png)
+  이 부분은 사전 준비 단계의 [Postman으로 access token과 refresh token 받기](https://github.com/SoftwareAG-Korea/tutorials/blob/master/UserGroup/Dec-2019/wmio+integration+api/Prerequisite/README.preq4.md) 튜토리얼을 참고하시기 바랍니다.  
+  
+  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.01.png)  
+  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.02.png)  
+  
+  아래 단계부터는 Salesforce로부터 OAuth2 토큰 발급 과정입니다.  
+  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.03.png)  
+  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.04.png)  
+  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.05.png)  
+  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.06.png)  
+  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.07.png)  
+  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.08.png)  
+  
+  Salesforce의 OAuth2 설정이 완료되었으니 이제 Salesforce에서 Lead를 추가하여 webMethods.io Integration에서 Salesforce에 추가된 Lead 정보가 트리거(Trigger)가 잘 작동하는지 테스트 합니다.  
+  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.09.png)  
+  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.10.png)  
+  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.11.png)  
+  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.12.png)  
+  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.13.png)  
+  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.14.png)  
+  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.15.png)  
+  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.16.png)  
+  ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.17.png)  
   
   
   ### Part 1.4 Biz Workflow - 연락처 입력  
-  Salesforce 이외의 다른 CRM SaaS 서비스에 입력할 수도 있습니다. 본 튜토리얼에서는 Lead에 들어온 연락처 정보를 Salesforce의 연락처에 입력하는 시나리오로 진행합니다.
+  이제 Salesforce의 Lead 정보에 대한 트리거(Trigger) 설정이 끝났으니 들어오는 트리거 정보를 처리하는 부분을 설정합니다. Salesforce 이외의 다른 CRM SaaS 서비스에 트리거로 들어온 정보를 입력할 수도 있습니다.  
+  본 튜토리얼에서는 아래와 같이 Salesforce의 Lead 정보의 연락처 정보를 Salesforce의 연락처에 입력하는 시나리오로 진행합니다.  
   ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.01.png)  
   ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.02.png)  
+  Salesforce CRM Connector가 수행할 API 중에 'Create Contact' Action을 선택하고 해당 단계에 대한 Name을 'Create Contact from Leads'라고 설정하고 Salesforce에 대한 인증은 Part 1.3 단계에서 설정한 OAuth2 설정을 재사용하여 설정합니다.  
   ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.03.png)  
-  아래 단계부터 Salesforce에게 OAuth2 토큰 발급 과정입니다.  
+  
+  Salesforce의 Lead 정보의 이름(FirstName과 LastName) 정보를 Salesforce CRM Connector의 'Create Contact' API에 대한 파라미터를 드래그 앤 드랍으로 설정합니다.  
   ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.04.png)  
   ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.05.png)  
   ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.06.png)  
   ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.07.png)  
   ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.08.png)  
+  테스트를 수행한 결과가 정상적으로 수행되었는지 확인하기 위해서 Salesforce에 접속하여 연락처(Contact)를 확인합니다.  
   ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.09.png)  
   ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.10.png)  
   ![](./images/part.1-4.webMethods.io.Workflow.Create.Contact.11.png)  
   
   
   ### Part 1.5 Biz Workflow - Slack 메신저 보내기  
-  사내 메신저가 SaaS/PaaS처럼 API를 제공한다면 node.js로 Custom(사용자 정의) Connector를 만들어서 사용할 수 있습니다. 본 튜토리얼에서는 Slack 메신저로 Salesforce의 Lead 정보를 에 다수의 Slack 사용자가 초대되어 있는 Lead 채널에 Lead 정보를 보내는 시나리오로 진행합니다.  
-  ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.01.png)
-  ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.02.png)
-  ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.03.png)
-  ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.04.png)
-  ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.05.png)
-  ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.06.png)
-  ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.07.png)
-  ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.08.png)
-  ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.09.png)
-  ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.10.png)
-  ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.11.png)
+  만약 사내 메신저가 SaaS/PaaS처럼 API를 제공한다면 node.js로 Custom(사용자 정의) Connector를 만들어서 사용할 수 있습니다.  
+  본 튜토리얼에서는 Slack 메신저로 Salesforce의 Lead 정보를 다수의 Slack 사용자가 초대되어 있는 Lead 채널에 Lead 정보를 보내는 시나리오로 진행합니다.  
+  Workflow 캔버스에 Slack Connector를 드래그 앤 드랍으로 설정합니다.  
+  ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.01.png)  
+  ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.02.png)  
+  아래 단계부터는 Slack으로부터 OAuth2 토큰 발급 과정입니다. Part 1.3 단계에서 Salesforce로부터 OAuth2 토큰 발급 과정과 유사합니다.   
+  ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.03.png)  
+  OAuth2를 제대로 사용하려면 webMethods.io Integration이 사용할 수 있는 권한만 설정(Scope 지정)해야 하지만 편의상 모든 사용 권한이 선택된 default로 진행하도록 하겠습니다.  
+  ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.04.png)  
+  ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.05.png)  
+  ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.06.png)  
+  ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.07.png)  
+  ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.08.png)  
+  ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.09.png)  
+  ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.10.png)  
+  ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.11.png)  
   
   
   ### Part 1.6 Biz Workflow - SMS 문자 보내기  
