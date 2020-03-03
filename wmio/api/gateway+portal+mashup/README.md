@@ -252,7 +252,7 @@
   Mashup 스텝 이름을 slack message로 입력하고 TutorialMessage 버전 2.0 API를 선택합니다.  
   ![](./images/part.2-5.webMethods.io.api.mashup.18.png)  
   
-  TutorialMessage 버전 2.0 API에 등록되어 있는 Native 서비스의 본래의 Webhook URL로 만든 HTTP Resource를 선택하고 HTTP 메소드를 선택합니다.  
+  TutorialMessage 버전 2.0 API에 등록되어 있는 Native 서비스 중에서 Slack 메시지를 보내는 Webhook URL로 만든 HTTP Resource를 선택하고 HTTP 메소드를 선택합니다.  
   ![](./images/part.2-5.webMethods.io.api.mashup.19.png)  
   
   /all/message에 대한 Input JSON에서 JSON Path을 이용하여 Slack으로 보낼 메시지를 추출하여 message 파라미터에 설정합니다.  
