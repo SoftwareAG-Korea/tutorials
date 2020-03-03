@@ -37,14 +37,13 @@
   
   
   ### Part 1.3 Biz Workflow - 리드 트리거 설정  
-  Salesforce에서 사전 준비 단계에 만든 ConnectedApp에 대한 OAuth2 토큰을 발급 받아서 Salesforce 트리거를 설정합니다.  
-  
   Salesforce에서 ConnectedApp을 생성하지 않으셨다면 [Saleforce에서 ConnectedApp 생성](https://github.com/SoftwareAG-Korea/tutorials/blob/master/UserGroup/Dec-2019/wmio+integration+api/Prerequisite/README.preq3.md) 튜토리얼을 참고하여 ConnectedApp을 생성해야 합니다.  
 
   본 튜토리얼에서는 workflow과 Salesforce의 ConnectedApp의 Owner가 같다라는 전제로 진행됩니다.  
   만약 Salesforce의 ConnectedApp에 대한 담당자가 다르다면 Salesforce의 담당자로부터 OAuth 토근을 전달 받아서 설정해야 합니다.  
   이 부분은 Salesforce의 ConnectedApp에 대한 담당자가 사전 준비 단계의 [Postman으로 access token과 refresh token 받기](https://github.com/SoftwareAG-Korea/tutorials/blob/master/UserGroup/Dec-2019/wmio+integration+api/Prerequisite/README.preq4.md) 튜토리얼 참고하여 OAuth 토큰 정보를 workflow의 Owner에게 안전하게 전달해줘야 합니다.  
   
+  Salesforce CRM의 Lead에 대한 트리거를 통해서 수행되는 workflow를 아래와 같이 생성합니다.  
   ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.01.png)  
   ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.02.png)  
   
