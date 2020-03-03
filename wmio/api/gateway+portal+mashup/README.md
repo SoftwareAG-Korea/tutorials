@@ -214,63 +214,117 @@
   
   ### Part 2.5 Mashup을 이용한 신규 HTTP Resource 생성  
   API Portal의 TutorialMessage API에 대한 개선 요청 내용을 API에 반영하는데 2가지 방법이 있습니다. 한가지 방법은 Natvie 서비스를 새로 만들어서 추가하는 방법과 API Mashup을 이용하는 방법입니다.  
-  API의 Natvie 서비스를 추가 개발해서 추가할 수 있지만 개선 요청 내용은 기존의 API의 HTTP Resource 2개가 한번에 같이 사용되기 떄문에 API Gateway 단에서 기존의 API Resource들을 가지고 API를 Mashup하여 새로운 HTTP Resource을 쉽게 빠르게 추가할 수 있습니다.  
+  API의 Natvie 서비스를 추가 개발해서 추가할 수 있지만 개선 요청 내용은 기존 API의 HTTP Resource 2개가 한번에 같이 사용되기 떄문에 API Gateway 단에서 기존 API들을 이용하여 새로운 API을 위한 HTTP Resource를 Mashup 쉽고 직관적으로 빠르게 추가할 수 있습니다.  
   
+  기존 TutorialMessage API 버전 1.0을 유지하면서 새로운 버전으로 생성하도록 하겠습니다. 기존 버전에 새로운 HTTP Resource를 추가하는 방법으로도 가능하지만 API 버전 관리에 대한 부분을 살펴보기 위해서 아래와 같이 TutorialMessage API 2.0 버전을 만들겠습니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.01.png)  
+  ![](./images/part.2-5.webMethods.io.api.mashup.02.png)  
+  ![](./images/part.2-5.webMethods.io.api.mashup.03.png)  
+  ![](./images/part.2-5.webMethods.io.api.mashup.04.png)  
   
-  ![](./images/part.2-5.webMethods.io.api.mashup.01.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.02.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.03.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.04.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.05.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.06.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.07.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.08.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.09.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.10.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.11.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.12.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.13.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.14.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.15.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.16.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.17.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.18.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.19.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.20.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.21.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.22.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.23.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.24.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.25.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.26.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.27.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.28.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.29.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.30.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.31.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.32.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.33.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.34.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.35.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.36.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.37.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.38.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.39.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.40.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.41.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.42.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.43.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.44.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.45.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.46.png)
-  ![](./images/part.2-5.webMethods.io.api.mashup.47.png)
+  /all/message 라는 HTTP Resource를 추가하겠습니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.05.png)  
+  ![](./images/part.2-5.webMethods.io.api.mashup.06.png)  
+  
+  Components에서 /all/message에 대한 Input JSON Schema를 등록합니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.07.png)  
+  ![](./images/part.2-5.webMethods.io.api.mashup.08.png)  
+  ![](./images/part.2-5.webMethods.io.api.mashup.09.png)  
+  ![](./images/part.2-5.webMethods.io.api.mashup.10.png)  
+  
+  Resources and methods에서 /all/message에 대한 Sample도 등록합니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.11.png)  
+  ![](./images/part.2-5.webMethods.io.api.mashup.12.png)  
+  ![](./images/part.2-5.webMethods.io.api.mashup.13.png)  
+  
+  새로운 HTTP Resource에 대한 기본 정보 입력이 끝났으니 SAVE 버튼을 클릭하여 저장하고 API Mashup 메뉴로 이동 하겠습니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.14.png)  
+  
+  새로운 HTTP Resource을 인식시키기 위해서 대로 Activate 버튼을 클릭하여 활성화한 후 Edit 버튼을 클릭하여 편집 모드로 이동합니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.15.png)  
+  
+  API Mashup으로 만들 HTTP Resource인 /all/message 를 선택하고 API Mashup 활성화 버튼을 클릭합니다. (아래 그림에서 좌측 상단 POST 메소드 우측 버튼)  
+  ![](./images/part.2-5.webMethods.io.api.mashup.16.png)  
+  
+  Mashup에 사용할 API를 추가하기 위해서 'Add Invoke' 버튼을 클릭합니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.17.png)  
+  
+  Mashup 스텝 이름을 slack message로 입력하고 TutorialMessage 버전 2.0 API를 선택합니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.18.png)  
+  
+  TutorialMessage 버전 2.0 API에 등록되어 있는 Native 서비스의 본래의 Webhook URL로 만든 HTTP Resource를 선택하고 HTTP 메소드를 선택합니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.19.png)  
+  
+  /all/message에 대한 Input JSON에서 JSON Path을 이용하여 Slack으로 보낼 메시지를 추출하여 message 파라미터에 설정합니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.20.png)  
+  
+  Slack 메시지를 보내는 API를 Mashup에 사용할 API로 등록한 것처럼 이번에는 SMS 메시지를 보내는 API를 Mashup에 사용할 API로 등록합니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.21.png)  
+  ![](./images/part.2-5.webMethods.io.api.mashup.22.png)  
+  
+  이제 Mashup에 사용한 Slack과 SMS API들이 캔버스에 등록되어 있으니 순차적으로 호출할 지 동시에 병렬로 호출할 지 매핑합니다.  
+  Slack과 SMS API는 의존성이 없는 API이기 때문에 동시에 병렬로 호출하는 방법으로 매핑하도록 하겠습니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.23.png)  
+  ![](./images/part.2-5.webMethods.io.api.mashup.24.png)  
+  ![](./images/part.2-5.webMethods.io.api.mashup.25.png)  
+  ![](./images/part.2-5.webMethods.io.api.mashup.26.png)  
+  
+  Mashup으로 /all/message API 서비스를 추가했으니 TutorialMessage 버전 2.0을 API Portal에 배포합니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.27.png)  
+  
+  TutorialMessage 버전 2.0에 대한 API 패키징을 하고 플랜을 선택하여 API Portal에 배포합니다. API 플랜은 기존에 만들었던 API 플랜을 재사용하도록 하겠습니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.28.png)  
+  ![](./images/part.2-5.webMethods.io.api.mashup.29.png)  
+  ![](./images/part.2-5.webMethods.io.api.mashup.30.png)  
+  ![](./images/part.2-5.webMethods.io.api.mashup.31.png)  
+  ![](./images/part.2-5.webMethods.io.api.mashup.32.png)  
+  ![](./images/part.2-5.webMethods.io.api.mashup.33.png)  
+  ![](./images/part.2-5.webMethods.io.api.mashup.34.png)  
+  
+  TutorialMessage 버전 2.0에 대한 API, 패키징이 API Portal에 잘 배포되었는지 확인합니다.   
+  ![](./images/part.2-5.webMethods.io.api.mashup.35.png)  
+  ![](./images/part.2-5.webMethods.io.api.mashup.36.png)  
+  
+  이번에는 POSTMAN이 아니라 API Portal에서 API Key(토큰)을 받아서 테스트를 해보도록 하겠습니다.  
+  아래 과정은 TutorialMessage 패키징의 ForFree 플랜을 사용하기 위해서 Subscribe하는 과정입니다. Plan을 가입하기 위해서는 먼저 어플리케이션(Application)을 만들어야 합니다. 어플리케이션(Application)은 어떤 API Consumer/Client가 어떤 Plan을 가입하여 호출하는지를 식별하는데 사용됩니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.37.png)  
+  
+  생성한 어플리케이션(Application)은 API Portal의 Applications 메뉴에서 확인할 수 있습니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.38.png)  
+  
+  방금 생성한 Application을 확인하면 API Key를 확인할 수 있습니다. 해당 Key는 API 호출할 때 해당 어플리케이션이 정상적으로 허가된 API Consumer/Client인지 확인하는데 사용되는 키값이므로 안전하게 보관해야 합니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.39.png)  
+  
+  API를 호출하기 위해서 어플리케이션(Application)도 만들었으니 이제 API Portal에서 API를 테스트해보기 위해서 API Gallery에서 TutorialMessage API 버전 2.0의 상세 페이지로 이동합니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.40.png)  
+  
+  아래 그림에서 'Try API' 메뉴를 클릭하면 해당 API를 테스트를 할 수 있는 화면으로 이동합니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.41.png)  
+  
+  아래 그림에서 좌측엔 TutorialMessage에서 제공하고 있는 API 목록이 나옵니다. 테스트할 API를 선택하면 HTTP Headers에 API Key가 자동으로 설정되어 있습니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.42.png)  
+  
+  HTTP Body에 Input JSON을 입력하고 SEND 버튼을 클릭하면 테스트가 수행됩니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.43.png)  
+  
+  /slack/message 서비스가 정상적으로 테스트가 수행되었는지 확인합니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.44.png)  
+  
+  TutorialMessage API 버전 2.0에 mashup으로 추가된 /all/message 서비스를 테스트해 봅니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.45.png)  
+  
+  테스트를 수행했으나 해당 어플리케이션은 ForFree 플랜을 가입했기 때문에 Rate limits의 사용 제한으로 호출되지 않았습니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.46.png)  
+  
+  ForFree 플랜의 Rate limits 시간이 지난 후에 다시 테스트하여 정상적으로 잘 호출되었는지 확인합니다.  
+  ![](./images/part.2-5.webMethods.io.api.mashup.47.png)  
   
   
   ### [API 해커톤 및 베타 프로그램](https://engage.softwareag.cloud/)  
-  살아있는 API 서비스를 하기 위해서는 API 개발자들과 지속적으로 소통할 수 있는 채널이 필요합니다.  
-  API Portal의 커뮤너티 등을 이용하여 소통도 당연히 해야 하겠지만 API 개발자들의 보다 적극적인 참여 유도 및 동기 부여를 위해서 해커톤 및 베타 프로그램 행사가 필요하기도 합니다.  
-  API Engagement platform 서비스는 webMethods.io와는 별도로 제공하는 클라우드 서비스로 필요한 기간 동안만 API 해커톤/베타 프로그램을 빠르고 쉽게 연결하여 운영할 수 있습니다.  
-  API Engagement platform 서비스를 통해서 API Consumer와 API Provider들은 보다 긴밀히 소통할 수 있습니다.  
+  API만 등록하여 배포한다고 API가 활성화되지 않습니다. 유용한 API들이 편리하고 합리적으로 잘 제공되어야 하고 지속적으로 API들에 대해서 개선되고 추가되어야 API를 성공적으로 서비스할 수 있습니다.  
+  이를 위해서 API 개발자, API 제공자과 API 관리자가 지속적으로 소통할 수 있는 채널이 필요합니다. API Portal의 커뮤너티 등을 이용하여 소통도 당연히 해야 하겠지만 API 개발자들의 보다 적극적인 참여 유도 및 동기 부여를 위해서 해커톤 및 베타 프로그램 행사를 많이 활용하고 있습니다.  
+  API Engagement platform 서비스는 별도로 제공하는 클라우드 서비스로 필요한 기간 동안만 API 해커톤/베타 프로그램 행사를 필요한 기간 동안에만 간편하고 쉽게 운영할 수 있게 해주는 클라우드 서비스입니다.  
+  해커톤/베타 프로그램을 위해서 웹 사이트를 개설하고 준비하는데 노력과 시간을 투자하지 않고 필요한 시기에 즉시 API Engagement platform 서비스를 이용하여 할 수 있습니다. 
   API Engagement platform 서비스 URL: https://engage.softwareag.cloud  
   
   
