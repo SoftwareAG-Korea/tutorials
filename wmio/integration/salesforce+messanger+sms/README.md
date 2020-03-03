@@ -37,13 +37,13 @@
   
   
   ### Part 1.3 Biz Workflow - 리드 트리거 설정  
-  Salesforce에서 사전 준비 단계에 만든 ConnectedApp에 대한 OAuth2 토큰을 발급 받아서 Salesforce 트리거를 설정합니다. 
+  Salesforce에서 사전 준비 단계에 만든 ConnectedApp에 대한 OAuth2 토큰을 발급 받아서 Salesforce 트리거를 설정합니다.  
   
   Salesforce에서 ConnectedApp을 생성하지 않으셨다면 [Saleforce에서 ConnectedApp 생성](https://github.com/SoftwareAG-Korea/tutorials/blob/master/UserGroup/Dec-2019/wmio+integration+api/Prerequisite/README.preq3.md) 튜토리얼을 참고하여 ConnectedApp을 생성해야 합니다.  
 
   본 튜토리얼에서는 workflow과 Salesforce의 ConnectedApp의 Owner가 같다라는 전제로 진행됩니다.  
   만약 Salesforce의 ConnectedApp에 대한 담당자가 다르다면 Salesforce의 담당자로부터 OAuth 토근을 전달 받아서 설정해야 합니다.  
-  이 부분은 사전 준비 단계의 [Postman으로 access token과 refresh token 받기](https://github.com/SoftwareAG-Korea/tutorials/blob/master/UserGroup/Dec-2019/wmio+integration+api/Prerequisite/README.preq4.md) 튜토리얼을 참고하시기 바랍니다.  
+  이 부분은 Salesforce의 ConnectedApp에 대한 담당자가 사전 준비 단계의 [Postman으로 access token과 refresh token 받기](https://github.com/SoftwareAG-Korea/tutorials/blob/master/UserGroup/Dec-2019/wmio+integration+api/Prerequisite/README.preq4.md) 튜토리얼 참고하여 OAuth 토큰 정보를 workflow의 Owner에게 안전하게 전달해줘야 합니다.  
   
   ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.01.png)  
   ![](./images/part.1-3.webMethods.io.Workflow.Trigger.Leads.02.png)  
@@ -100,9 +100,11 @@
   Workflow 캔버스에 Slack Connector를 드래그 앤 드랍으로 설정합니다.  
   ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.01.png)  
   ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.02.png)  
+  
   Slack Connector가 수행할 API 서비스 중에 'Post Message to Channel' Action을 선택하고 해당 블럭의 이름(Name)을 설정하고 Slack OAuth2 설정합니다.  
   Slack으로부터 OAuth2 토큰 발급 과정은 Part 1.3 단계에서 Salesforce로부터 OAuth2 토큰 발급 과정과 비슷합니다.   
   ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.03.png)  
+  
   OAuth2를 제대로 사용하려면 webMethods.io Integration이 사용할 수 있는 권한만 선택하여 설정(Scope 지정)해야 하지만 튜토리얼 편의상 모든 사용 권한이 선택된 default로 진행하도록 하겠습니다.  
   ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.04.png)  
   ![](./images/part.1-5.webMethods.io.Workflow.Send.Message.Slack.05.png)  
@@ -130,18 +132,21 @@
   ![](./images/part.1-6.webMethods.io.Workflow.Send.Message.SMS.03.png)  
   
   알리고의 문자 API를 호출하는 설정을 아래와 같이 진행합니다.  
-  ![](./images/part.1-6.webMethods.io.Workflow.Send.Message.SMS.04.png)
-  ![](./images/part.1-6.webMethods.io.Workflow.Send.Message.SMS.05.png)
+  ![](./images/part.1-6.webMethods.io.Workflow.Send.Message.SMS.04.png)  
+  ![](./images/part.1-6.webMethods.io.Workflow.Send.Message.SMS.05.png)  
   ![](./images/part.1-6.webMethods.io.Workflow.Send.Message.SMS.06.png)  
   ![](./images/part.1-6.webMethods.io.Workflow.Send.Message.SMS.07.png)  
   ![](./images/part.1-6.webMethods.io.Workflow.Send.Message.SMS.08.png)  
+  
   아래의 설정을 해야 하는 이유는 종종 외부 API 서비스들이 IP를 기반으로 정상트래픽인지 관리하기도 합니다.  
   webMethods.io Integration에서 알리고를 호출하는 것이기 떄문에 webMethods.io Integration의 Outgoing IP를 알리고(Aligo) 서비스에 등록합니다.  
   현재 webMethods.io는 현재 AWS의 2개 Region에서 현재 서비스되고 있기 떄문에 2개 Region의 Outgoing IP를 등록한 것입니다. webMethods.io의 Region은 지속적으로 추가되고 있고 외부 서비스 연동을 위해서 본인이 사용 중인 Region의 Outgoing IP를 알아둘 필요가 있습니다.  
   ![](./images/part.1-6.webMethods.io.Workflow.Send.Message.SMS.09.png)  
   ![](./images/part.1-6.webMethods.io.Workflow.Send.Message.SMS.10.png)  
+  
   아래와 같이 알리고(Aligo) 문자 API의 HTTP Header을 설정합니다.
   ![](./images/part.1-6.webMethods.io.Workflow.Send.Message.SMS.11.png)  
+  
   아래와 같이 알리고(Aligo) 문자 API의 HTTP Body에 receiver, msg, testmode_yn을 설정합니다.  
   ![](./images/part.1-6.webMethods.io.Workflow.Send.Message.SMS.12.png)  
   ![](./images/part.1-6.webMethods.io.Workflow.Send.Message.SMS.13.png)  
@@ -164,18 +169,18 @@
   ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.04.png)  
   ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.05.png)  
   ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.06.png)  
-  ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.07.png)
-  ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.08.png)
-  ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.09.png)
-  ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.10.png)
-  ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.11.png)
-  ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.12.png)
-  ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.13.png)
-  ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.14.png)
-  ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.15.png)
-  ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.16.png)
-  ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.17.png)
-  ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.18.png)
+  ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.07.png)  
+  ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.08.png)  
+  ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.09.png)  
+  ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.10.png)  
+  ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.11.png)  
+  ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.12.png)  
+  ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.13.png)  
+  ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.14.png)  
+  ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.15.png)  
+  ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.16.png)  
+  ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.17.png)  
+  ![](./images/part.1-7.webMethods.io.Workflow.Reuse.workflow.18.png)  
   
   이번에는 재사용 가능한 SMS용 Workflow을 만들기 위해서 Part 1.6에서 만든 Workflow를 복사하고 Trigger 설정을 Webhook으로 변경하고 전송할 메시지를 전달하기 위해서 Webhook Payload를 활성화합니다.  
   복사(Clone)한 Workflow에서 SMS 부분만 남겨놓고 다른 블럭은 모두 삭제하고 Webhook Payload로부터 전달받은 메시지를 이용하여 SMS 메시지를 다시 구성합니다.  
