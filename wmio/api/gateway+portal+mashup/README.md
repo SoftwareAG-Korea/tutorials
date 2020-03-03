@@ -6,7 +6,7 @@
   
   Part 1과 Part 2에 대한 전체적인 개요 설명부터 시작하시려면 [Dec-2019 유저 그룹 행사 페이지](https://github.com/SoftwareAG-Korea/tutorials/blob/master/UserGroup/Dec-2019/wmio+integration+api/)를 참고하세요.  
   
-  > Author: [Software AG, Korea](https://www.softwareag.com/kr/) [이범](https://github.com/billybeom) 
+  > Author: [Software AG, Korea](https://www.softwareag.com/kr/) [이범](https://github.com/billybeom)  
   > Last Modified: 10-JAN-2020  
   
   
@@ -18,36 +18,55 @@
   ### Part 2. webMethods.io API 튜토리얼  
   
   webMethods.io Integration에서 만든 Slack과 SMS workflow을 webMethods.io API에서 API로 만들어 봅니다.  
-  Part 2에서 workflow을 API로 만드는 부분이 매우 쉽게 바뀔 예정입니다. webMethods.io의 2020년 Spring Release에서는 만든 workflow를 버튼 몇번 클릭으로만으로 webMethods.io API Gateway에 API로 쉽게 배포할 수 있습니다.  
+  Part 2 튜토리얼에서 살펴보는 'workflow을 API로 만드는 과정'이 매우 쉽게 바뀔 예정입니다. 2020년 Spring Release에서는 webMethods.io Integration에서 생성한 workflow를 버튼 몇번 클릭으로만으로 webMethods.io API Gateway에 API을 쉽게 배포할 수 있도록 변경 예정입니다.  
   
   ### Part 2.1 webMethods.io API로 이동 및 API 생성  
-  ![](./images/part.2-1.webMethods.io.api.gw.01.png)
-  ![](./images/part.2-1.webMethods.io.api.gw.02.png)
+  webMethods.io에서 API 생성을 위해서 webMethods.io API Gateway로 이동합니다.   
+  ![](./images/part.2-1.webMethods.io.api.gw.01.png)  
+  APIs 메뉴를 선택한 후 'Create API' 버튼을 클릭하여 API 생성을 시작합니다.  
+  ![](./images/part.2-1.webMethods.io.api.gw.02.png)  
+  OpenAPI 3.0, Swagger 2.0, RAML 등의 API 명세서(Specification)의 파일이나 URL을 통해서 APIs을 쉽게 생성할 수 있습니다.  
+  본 Part 2 튜토리얼은 webMethods.is Integration에서 생성한 workflow에 Webhook으로 생성된 URL을 매뉴얼하게 API를 생성하는 과정으로 진행되기 때문에 3번째 scratch 방식을 선택합니다.  
   ![](./images/part.2-1.webMethods.io.api.gw.03.png)  
-    
-  아래의 URL은 webMethods.io Integration에서 생성한 flow의 webhook URL과 파라미터입니다. API로 등록할 Native 서비스의 Server URL과 HTTP Resource를 확인합니다.
-  ![](./images/part.2-1.webMethods.io.api.gw.04.png)
-  ![](./images/part.2-1.webMethods.io.api.gw.05.png)
-  ![](./images/part.2-1.webMethods.io.api.gw.06.png)
-  ![](./images/part.2-1.webMethods.io.api.gw.07.png)
-  ![](./images/part.2-1.webMethods.io.api.gw.08.png)
-  ![](./images/part.2-1.webMethods.io.api.gw.09.png)
-  ![](./images/part.2-1.webMethods.io.api.gw.10.png)
-  ![](./images/part.2-1.webMethods.io.api.gw.11.png)
-  ![](./images/part.2-1.webMethods.io.api.gw.12.png)
-  ![](./images/part.2-1.webMethods.io.api.gw.13.png)
+  
+  아래의 URL은 webMethods.io Integration에서 생성했단 Slack과 SMS 메시지를 보내는 workflow의 Webhook URL과 파라미터입니다.  
+  API로 등록할 Native 서비스(Slack과 SMS workflow)의 Server URL과 HTTP Resource를 확인합니다. Slack/SMS을 보내는 Workflow에 대한 API를 각각 만들지 않고 TutorialMessage 라는 API 서비스로 만들어서 2개의 Native 서비스를 가지고 있도록 API를 아래처럼 구성합니다.  
+  ![](./images/part.2-1.webMethods.io.api.gw.04.png)  
+  Slack과 SMS workflow에 대한 API에 대한 기본 정보인 Tags, Description 등을 입력합니다.  
+  ![](./images/part.2-1.webMethods.io.api.gw.05.png)  
+  자신의 테넌트 이름으로 생성된 webMethods.io Integration의 Server URL을 입력하여 추가합니다.  
+  ![](./images/part.2-1.webMethods.io.api.gw.06.png)  
+  ![](./images/part.2-1.webMethods.io.api.gw.07.png)  
+  'Add resources'을 클릭하여 TutorialMessage에서 제공할 HTTP Resource들을 추가합니다.  
+  ![](./images/part.2-1.webMethods.io.api.gw.08.png)  
+  아래 2개의 그림은 Slack 메시지를 보내는 Slack workflow에 대한 Native 서비스의 URI(HTTP Resource)를 추가하는 과정입니다.  
+  ![](./images/part.2-1.webMethods.io.api.gw.09.png)  
+  ![](./images/part.2-1.webMethods.io.api.gw.10.png)  
+  아래 2개의 그림은 SMS 메시지를 보내는 SMS workflow에 대한 Native 서비스의 URI(HTTP Resource)를 추가하는 과정입니다.  
+  ![](./images/part.2-1.webMethods.io.api.gw.11.png)  
+  API에 대한 필수 정보 설정이 끝났으니 저장합니다.  
+  ![](./images/part.2-1.webMethods.io.api.gw.12.png)  
+  (옵션) 다음은 필수 과정이 아니지만 Schema validation과 Sample을 입력하는 과정입니다. 이와 같은 정보를 설정하면 API 명세서(Specification)에 보다 많은 정보가 담기게 되어 API 개발자들이 보다 API를 쉽게 연동하는데 도움을 수 있습니다.  
+  ![](./images/part.2-1.webMethods.io.api.gw.13.png)  
   ![](./images/part.2-1.webMethods.io.api.gw.14.png)  
     
-  다음은 스키마 등록 단계입니다. 필수단계는 아니지만 스키마를 등록해두면 API Gateway가 API 호출 요청이 받았을 때 Schema validation하는 기능을 설정할 수 있습니다.  
-  ![](./images/part.2-1.webMethods.io.api.gw.15.png)
-  ![](./images/part.2-1.webMethods.io.api.gw.16.png)
-  ![](./images/part.2-1.webMethods.io.api.gw.17.png)
-  ![](./images/part.2-1.webMethods.io.api.gw.18.png)
-  ![](./images/part.2-1.webMethods.io.api.gw.19.png)
-  ![](./images/part.2-1.webMethods.io.api.gw.20.png)
-  ![](./images/part.2-1.webMethods.io.api.gw.21.png)
-  ![](./images/part.2-1.webMethods.io.api.gw.22.png)
-  ![](./images/part.2-1.webMethods.io.api.gw.23.png)
+  API에 등록될 HTTP Resource들에 대한 스키마 등록 단계입니다. 스키마를 등록해두면 API Gateway가 API 호출 요청이 받았을 때 Schema validation하는 기능을 이용할 수 있습니다.  
+  아래 과정은 Slack에 대한 스키마를 등록하는 과정입니다.  
+  ![](./images/part.2-1.webMethods.io.api.gw.15.png)  
+  JSON 샘플을 입력하면 JSON Schema를 생성해주는 서비스를 이용하여 Slack에 대한 Schema를 생성합니다. 필요에 따라서 자동 생성된 Schema를 수정해서 사용합니다.  
+  ![](./images/part.2-1.webMethods.io.api.gw.16.png)  
+  Slack에 대한 JSON Schema를 설정합니다.  
+  ![](./images/part.2-1.webMethods.io.api.gw.17.png)  
+  아래 과정은 SMS에 대한 스키마를 등록하는 과정입니다.  
+  ![](./images/part.2-1.webMethods.io.api.gw.18.png)  
+  위에서 Slack에 대한 스키마를 자동 생성한 것과 같이 SMS에 대한 Schema를 생성합니다. 필요에 따라서 자동 생성된 Schema를 수정해서 사용합니다.  
+  ![](./images/part.2-1.webMethods.io.api.gw.19.png)  
+  SMS에 대한 JSON Schema를 설정합니다.  
+  ![](./images/part.2-1.webMethods.io.api.gw.20.png)  
+  아래 과정은 샘플을 입력하는 과정입니다. Slack과 SMS에 대한 JSON Schema를 생성할 사용했던 샘플 JSON으로 설정합니다.  
+  ![](./images/part.2-1.webMethods.io.api.gw.21.png)  
+  ![](./images/part.2-1.webMethods.io.api.gw.22.png)  
+  ![](./images/part.2-1.webMethods.io.api.gw.23.png)  
   
   
   ### Part 2.2 가독성 높은 HTTP Resource 추가  
