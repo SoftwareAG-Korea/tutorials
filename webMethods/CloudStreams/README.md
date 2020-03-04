@@ -1,5 +1,5 @@
-  ## 'CloudStream for Salesforce' 튜토리얼 
-  2019년 12월 webMethods User Group Meetup 행사의 클라우드 서비스(SaaS/PaaS)를 연계할 수 있는 CloudStream server에 대한 데모에 대한 튜토리얼입니다.  
+  ## 'CloudStreams for Salesforce' 튜토리얼 
+  2019년 12월 webMethods User Group Meetup 행사의 클라우드 서비스(SaaS/PaaS)를 연계할 수 있는 CloudStreams server에 대한 데모에 대한 튜토리얼입니다.  
   webMethods User Group Meetup의 다른 데모를 보시려면 [Dec-2019 유저 그룹 행사 페이지](https://github.com/SoftwareAG-Korea/tutorials/blob/master/UserGroup/Dec-2019/wmio+integration+api/)를 참고하세요.  
   본 튜토리얼에서는 On-premise에 구성된 webMethods Integration에서 Salesforce의 연락처를 inbound/outbound의 양방향 연계하는 방법에 대해서 소개합니다.  
   
@@ -8,22 +8,22 @@
   > Last Modified: 19-FEB-2020  
   
   
-  ### CloudStream 설치  
-  CloudStream server 사용을 위하여 webMethods Integration을 설치 시에 아래의 component를 설치하여야 합니다.  
+  ### CloudStreams 설치  
+  CloudStreams server 사용을 위하여 webMethods Integration을 설치 시에 아래의 component를 설치하여야 합니다.  
   ![](./images/01.wM.CloudStreams.Installation.png)  
   
   설치가 정상적으로 진행되면 아래와 같이 webMethods Integration Admin 화면에서 WmCloudStreams 패키지를 확인할 수 있습니다.  
   ![](./images/02.wM.CloudStreams.Connector.01.png)  
   
   ### Saleforce Connector 설치  
-  CloudStream server에서 SaaS/PaaS 시스템에 연계하기 위해서는 CloudStream server에 연계하고자 하는 SaaS/PaaS별 Connector를 다운로드 받아서 설치해야 합니다. Software AG에서 지원하고 있는 SaaS/PaaS별 Connector들은 아래의 주소에서 확인할 수 있습니다.  
+  CloudStreams server에서 SaaS/PaaS 시스템에 연계하기 위해서는 CloudStreams server에 연계하고자 하는 SaaS/PaaS별 Connector를 다운로드 받아서 설치해야 합니다. Software AG에서 지원하고 있는 SaaS/PaaS별 Connector들은 아래의 주소에서 확인할 수 있습니다.  
   http://techcommunity.softwareag.com/ecosystem/communities/public/webmethods/products/cloudstreams/downloads/connectors-cloudstreams/
   ![](./images/02.wM.CloudStreams.Connector.02.png)  
   
   위의 URL에서 Salesforce.com 연계를 위해 Salesforce Connector를 다운로드 받습니다.  
   ![](./images/02.wM.CloudStreams.Connector.03.png)  
   
-  CloudStream server에 Salesforce Connector 설치를 위해서 다운로드받은 파일은 아래의 경로에 복사합니다.  
+  CloudStreams server에 Salesforce Connector 설치를 위해서 다운로드받은 파일은 아래의 경로에 복사합니다.  
   <SAG_Home>\IntegrationServer\instances\<Instance_name>\replicate\inbound  
   ![](./images/02.wM.CloudStreams.Connector.04.png)  
   
@@ -31,7 +31,7 @@
   ![](./images/02.wM.CloudStreams.Connector.05.png)  
   
   ### Salesforce.com connection 설정  
-  webMethods Integration의 Admin 화면에서 solution 링크를 선택해서 CloudStream server 설정 화면으로 이동합니다.  
+  webMethods Integration의 Admin 화면에서 solution 링크를 선택해서 CloudStreams server 설정 화면으로 이동합니다.  
   ![](./images/03.wM.CloudStreams.Connection.01.png)  
   ![](./images/03.wM.CloudStreams.Connection.02.png)  
   ![](./images/03.wM.CloudStreams.Connection.03.png)  
@@ -52,8 +52,8 @@
   ![](./images/03.wM.CloudStreams.Connection.09.png)  
   
   지금까지 CloudStreams server 설치/구성하고 CloudStreams server에 Saleforce Connector 설치/구성 단계가 완료했고 이제 outbound 연계와 inbound 연계를 진행할 수 있습니다.  
-   - outbound 연계 정의: CloudStream  --->  SaaS 서비스  
-   - inbound  연계 정의: CloudStream  <---  SaaS 서비스  
+   - outbound 연계 정의: CloudStreams  --->  SaaS 서비스  
+   - inbound  연계 정의: CloudStreams  <---  SaaS 서비스  
   
   
   ### Cloud Connector Service (Outbound Service)  
