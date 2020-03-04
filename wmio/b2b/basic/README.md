@@ -1,7 +1,7 @@
   ## 'webMethods.io B2B' 튜토리얼 
-  본 튜토리얼에서는 webMethods.io의 B2B SaaS 서비스에 대한 기능과 간단한 사용 방법을 소개합니다.  2020년 상반기 내로 작성하여 올릴 예정입니다.  
+  본 튜토리얼에서는 webMethods.io의 B2B 클라우드 서비스에 대한 기능과 간단한 사용 방법을 소개합니다.  2020년 상반기 내로 작성하여 올릴 예정입니다.  
 
-  우선 아래의 Software AG 유투브 채널의 webMethods.io B2B 튜토리얼 영상들을 참고하세요.  
+  우선 아래의 Software AG 유투브 채널에 올라와 있는 webMethods.io B2B 튜토리얼 영상들을 참고하세요.  
   
   ##### [webMethods DevBytes: Introduction to webMethods.io B2B](https://www.youtube.com/watch?v=YQVqUheXkI8)  
     
