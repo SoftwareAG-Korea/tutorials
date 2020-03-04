@@ -39,8 +39,8 @@
   - 요약: Integrating Trading Partners  
   ![](./images/01.b2b_tpa_05.JPG)  
   
-  #### 2. Document Processing
   
+  #### 2. Document Processing  
   - 표준 문서 등록과 프로세스 실행에 대한 관리를 지원합니다.  
   ![](./images/01.b2b_dp_01.JPG)  
 
@@ -52,17 +52,17 @@
 
   - 요약: Document Processing  
   ![](./images/01.b2b_dp_04.JPG)  
-
-  #### 3. Supporting B2B Standards
   
+  
+  #### 3. Supporting B2B Standards  
   - 모든 B2B 표준과 EDI 표준 문서를 지원합니다.  
   ![](./images/01.b2b_support_01.JPG)  
   ![](./images/01.b2b_support_02.JPG)  
   - 요약: B2B Standards  
   ![](./images/01.b2b_support_03.JPG)  
-
-  #### 4. Monitoring and Analytics
   
+  
+  #### 4. Monitoring and Analytics  
   - 서비스 흐름에 대한 모니터링을 지원합니다.  
   ![](./images/01.b2b_ma_01.JPG)  
   ![](./images/01.b2b_ma_02.JPG)  
