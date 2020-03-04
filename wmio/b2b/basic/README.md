@@ -1,4 +1,4 @@
-  ## 'webMethods.io B2B 솔루션' 튜토리얼 
+  ## 'webMethods.io B2B' 튜토리얼 
   2019년 12월 webMethods User Group Meetup 행사의 webMethods.io B2B에 대한 튜토리얼입니다.  
   본 튜토리얼에서는 webMethods.io의 B2B SaaS 서비스에 대한 기능과 간단한 사용 방법을 소개합니다.   
   
